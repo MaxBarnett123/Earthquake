@@ -1,0 +1,57 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+
+    double magnitude = 0.0;
+
+    string Description;
+
+    cout << "What is the magnitude of the earth quake?" << endl;
+    cin >> magnitude;
+
+    if (magnitude < 2.0) {
+
+        Description = "Mirco";
+
+    } else if (magnitude >= 2.0 && magnitude < 3.0) {
+
+        Description = "Very Minor";
+
+    } else if (magnitude >= 3.0 && magnitude < 4.0) {
+
+        Description = "Minor";
+
+    } else if (magnitude >= 4.0 && magnitude < 5.0) {
+
+        Description = "Light";
+      
+    } else if (magnitude >= 5.0 && magnitude < 6.0) {
+
+        Description = "Moderate";
+
+    } else if (magnitude >= 6.0 && magnitude < 7.0) {
+
+        Description = "Strong";
+
+    } else if (magnitude >= 7.0 && magnitude < 8.0) {
+        Description = "Major";
+    
+    } else if (magnitude >= 8.0 && magnitude < 10.0) {
+        Description = "Great";
+
+    }else if (magnitude >= 10.0) {
+        Description = "Meteoric";
+
+       
+    } else {
+        Description = "Invalid magnitude";
+
+    }
+
+    cout << "The earth quake is "<< Description << endl;
+
+    return 0;
+}
